@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Andy Cantu - Creative Director | Video Production | Content Strategy | Dallas</title>
+    <meta name="description" content="Andy Cantu is a Creative Director at CYLNDR Studios specializing in video production, social media content, and brand storytelling for CPG, restaurant, and energy industries.">
+    <meta name="keywords" content="Andy Cantu, Creative Director, Video Production, Content Strategy, CYLNDR Studios, Dallas, Social Media, Brand Storytelling">
+    <meta name="author" content="Andy Cantu">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.andycantu.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.andycantu.com">
+    <meta property="og:title" content="Andy Cantu - Creative Director | Creating at the Speed of Culture">
+    <meta property="og:description" content="Creative Director at CYLNDR Studios with expertise in video production, social media content, and brand campaigns for major brands.">
+    <meta property="og:image" content="https://www.andycantu.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.andycantu.com">
+    <meta property="twitter:title" content="Andy Cantu - Creative Director">
+    <meta property="twitter:description" content="Creating content that moves at the speed of culture. Video, Social Media, Brand Storytelling.">
+    <meta property="twitter:image" content="https://www.andycantu.com/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Andy Cantu",
+        "jobTitle": "Creative Director",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "CYLNDR Studios"
+        },
+        "description": "Creative Director specializing in video production and social media content",
+        "url": "https://www.andycantu.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/andycantu",
+            "https://www.instagram.com/andycantu"
+        ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of North Texas"
+        },
+        "knowsAbout": ["Video Production", "Creative Direction", "Social Media Marketing", "Brand Strategy", "Content Creation"]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: none;
+        }
+
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-section: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #ff3366;
+            --accent-hover: #ff5580;
+            --card-bg: #1a1a1a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Skip to content for accessibility */
+        .skip-to-content {
+            position: absolute;
+            left: -9999px;
+            z-index: 999;
+            padding: 1em;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+        }
+
+        .skip-to-content:focus {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+
+        /* Custom Cursor */
+        .cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.1s ease;
+            transform: translate(-50%, -50%);
+        }
+
+        .cursor-follower {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 51, 102, 0.1);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%);
+        }
+
+        .cursor.hover {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 51, 102, 0.2);
+            border-color: transparent;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading Screen */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader-text {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -3px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 20px 5%;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 15px 5%;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .logo:hover {
+            color: var(--accent);
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Particles Background */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background: var(--accent);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: float 20s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+            }
+            33% {
+                transform: translateY(-100px) translateX(100px);
+            }
+            66% {
+                transform: translateY(100px) translateX(-100px);
+            }
+        }
+
+        /* Hero Section with Video Background */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .hero iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            opacity: 0.3;
+            filter: grayscale(100%);
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 800;
+            letter-spacing: -3px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero h1 span {
+            display: inline-block;
+            animation: letterFloat 3s ease-in-out infinite;
+            animation-delay: calc(var(--i) * 0.1s);
+        }
+
+        @keyframes letterFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .glitch {
+            position: relative;
+            color: var(--text-primary);
+            animation: glitch 2s infinite;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch::before {
+            animation: glitch-1 0.5s infinite;
+            color: var(--accent);
+            z-index: -1;
+        }
+
+        .glitch::after {
+            animation: glitch-2 0.5s infinite;
+            color: #00ffff;
+            z-index: -2;
+        }
+
+        @keyframes glitch {
+            0%, 100% { text-shadow: 0 0 5px rgba(255, 51, 102, 0.5); }
+            50% { text-shadow: 0 0 20px rgba(255, 51, 102, 0.8); }
+        }
+
+        @keyframes glitch-1 {
+            0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+            20% { clip-path: inset(20% 0 30% 0); transform: translate(-2px, 2px); }
+            40% { clip-path: inset(50% 0 20% 0); transform: translate(2px, -2px); }
+            60% { clip-path: inset(10% 0 60% 0); transform: translate(-2px, 2px); }
+            80% { clip-path: inset(80% 0 5% 0); transform: translate(2px, -2px); }
+        }
+
+        @keyframes glitch-2 {
+            0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+            20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -2px); }
+            40% { clip-path: inset(20% 0 60% 0); transform: translate(-2px, 2px); }
+            60% { clip-path: inset(30% 0 40% 0); transform: translate(2px, -2px); }
+            80% { clip-path: inset(10% 0 80% 0); transform: translate(-2px, 2px); }
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-roles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .role-tag {
+            padding: 10px 20px;
+            background: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 30px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .role-tag::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: var(--accent);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s ease;
+        }
+
+        .role-tag:hover::before {
+            width: 200%;
+            height: 200%;
+        }
+
+        .role-tag:hover {
+            color: var(--text-primary);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .role-tag span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--accent);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out 0.6s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: var(--accent-hover);
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            transform: translate(-50%, -50%) scale(2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 51, 102, 0.3);
+        }
+
+        .cta-button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Work Section with Horizontal Scroll */
+        .work {
+            padding: 100px 0;
+            background: var(--bg-section);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Vimeo iframe styles */
+        .vimeo-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+
+        .vimeo-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .work-card .vimeo-container {
+            padding-bottom: 75%; /* Taller aspect ratio for cards */
+            height: 0;
+        }
+
+        .work-card .vimeo-container iframe {
+            transition: transform 0.3s ease;
+        }
+
+        .work-card:hover .vimeo-container iframe {
+            transform: scale(1.1);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 0 5%;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .work-container {
+            display: flex;
+            gap: 30px;
+            padding: 0 5%;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .work-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .work-card {
+            min-width: 400px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .work-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .work-card-video-container {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            background: #222;
+        }
+
+        .work-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+        }
+
+        .work-card:hover .work-card-overlay {
+            opacity: 1;
+        }
+
+        .work-card-content {
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .work-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .work-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .work-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .work-tag {
+            font-size: 12px;
+            padding: 5px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            color: var(--text-secondary);
+        }
+
+        /* Scroll Indicators */
+        .scroll-indicator {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .scroll-arrow {
+            width: 40px;
+            height: 40px;
+            background: var(--card-bg);
+            border: 2px solid #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .scroll-arrow:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        /* About Section with 3D Effect */
+        .about {
+            padding: 100px 5%;
+            background: var(--bg-dark);
+            position: relative;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .stat:hover::before {
+            opacity: 0.1;
+        }
+
+        .stat:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        /* 3D Profile Image */
+        .about-image {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .image-3d {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent) 0%, #ff80a0 100%);
+            border-radius: 20px;
+            position: relative;
+            transform: rotateY(0deg) rotateX(0deg);
+            transition: transform 0.1s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        /* Photography Gallery */
+        .photography {
+            padding: 100px 5%;
+            background: var(--bg-dark);
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background: var(--card-bg);
+            cursor: pointer;
+            aspect-ratio: 1;
+        }
+
+        /* Vary aspect ratios for visual interest */
+        .photo-item:nth-child(3n+1) {
+            aspect-ratio: 1;
+        }
+
+        .photo-item:nth-child(3n+2) {
+            aspect-ratio: 4/5;
+        }
+
+        .photo-item:nth-child(3n) {
+            aspect-ratio: 5/4;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .photo-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .photo-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.7) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .photo-item:hover::before {
+            opacity: 1;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 40px;
+            height: 40px;
+            background: var(--card-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            background: var(--accent);
+            transform: scale(1.1);
+        }
+
+        /* Project Details Update */
+        .work-card-content.expanded {
+            max-height: none;
+        }
+
+        .work-card-content p.full-description {
+            display: none;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .work-card.expanded .full-description {
+            display: block;
+        }
+
+        .read-more {
+            color: var(--accent);
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            padding: 100px 5%;
+            background: var(--bg-section);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, var(--accent) 0%, transparent 50%);
+            opacity: 0.05;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .contact h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-link::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: transparent;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s ease;
+        }
+
+        .contact-link:hover::before {
+            width: 300%;
+            height: 300%;
+        }
+
+        .contact-link:hover {
+            background: transparent;
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            background: var(--card-bg);
+            border: 2px solid #333;
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 51, 102, 0.05);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            background: var(--accent);
+            color: var(--text-primary);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .form-submit:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 51, 102, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            padding: 50px 5% 30px;
+            background: var(--bg-dark);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .work-card {
+                min-width: 300px;
+            }
+            
+            .hero-roles {
+                justify-content: center;
+            }
+            
+            .scroll-indicator {
+                display: none;
+            }
+            
+            .cursor, .cursor-follower {
+                display: none;
+            }
+            
+            * {
+                cursor: auto;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .photo-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+            }
+        }
+
+        /* Accessibility Improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Focus Styles */
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            nav, .hero-video-container, .particles, .cursor, .cursor-follower {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main" class="skip-to-content">Skip to content</a>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-text">AC</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Andy Cantu - Home">ANDY CANTU</a>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home" aria-label="Hero section">
+            <div class="hero-video-container">
+                <div class="vimeo-container" style="position: absolute; width: 100%; height: 100%;">
+                    <iframe 
+                        src="https://player.vimeo.com/video/993923150?h=087e0e6494&background=1&autoplay=1&loop=1&muted=1&autopause=0"
+                        style="position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; transform: translate(-50%, -50%); opacity: 0.3; filter: grayscale(100%);"
+                        frameborder="0"
+                        allow="autoplay; fullscreen"
+                        aria-label="Background video reel">
+                    </iframe>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Andy Cantu">
+                    <span style="--i: 0">A</span>
+                    <span style="--i: 1">n</span>
+                    <span style="--i: 2">d</span>
+                    <span style="--i: 3">y</span>
+                    <span style="--i: 4">&nbsp;</span>
+                    <span style="--i: 5">C</span>
+                    <span style="--i: 6">a</span>
+                    <span style="--i: 7">n</span>
+                    <span style="--i: 8">t</span>
+                    <span style="--i: 9">u</span>
+                </h1>
+                <p class="hero-subtitle">Creating content that moves at the speed of culture</p>
+                <div class="hero-roles">
+                    <div class="role-tag"><span>Creative Director</span></div>
+                    <div class="role-tag"><span>Writer</span></div>
+                    <div class="role-tag"><span>Editor</span></div>
+                    <div class="role-tag"><span>Videographer</span></div>
+                    <div class="role-tag"><span>Creator</span></div>
+                </div>
+                <a href="#work" class="cta-button"><span>View My Work</span></a>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section class="work" id="work" aria-label="Portfolio work">
+            <div class="section-header">
+                <h2>Selected Work</h2>
+                <p>Brand stories that connect, content that converts, campaigns that captivate</p>
+            </div>
+            <div class="scroll-indicator">
+                <button class="scroll-arrow" id="scroll-left" aria-label="Scroll left">←</button>
+                <button class="scroll-arrow" id="scroll-right" aria-label="Scroll right">→</button>
+            </div>
+            <div class="work-container" id="work-container" role="list">
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/994234823?h=92dce47d40&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/994234823?h=92dce47d40&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Dial + Jason Kelce</h3>
+                        <p>Celebrity partnership campaign featuring NFL star Jason Kelce, creating authentic content that resonated with audiences.</p>
+                        <p class="full-description">When the popular podcast New Heights with Jason and Travis Kelce featured a moment when Philadelphia Eagles Center Jason Kelce organically shared his love for Dial® Bars as his shower soap of choice, the brand wanted to team up. Jason's mention of Dial came at peak Kelce Brother fever, coinciding with his brother Travis's newly announced romance with Taylor Swift. It was the perfect opportunity to ride the wave of cultural social relevance in what turned into 3 Meta collab reels of which I was responsible for concepting then editing.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Celebrity Partnership</span>
+                            <span class="work-tag">Social Media</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/993757000?h=caa9c9267c&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/993757000?h=caa9c9267c&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Persil + Christian Siriano</h3>
+                        <p>Fashion-forward campaign collaboration with renowned designer Christian Siriano, blending style with everyday life.</p>
+                        <p class="full-description">Persil® Laundry Detergent launched their colorful new rebrand along with new formulas that keep your clothes looking newer, longer. With your clothes staying vibrant wash after wash you get to repeat your favorite outfits again and again. So it's only natural that led to the brand's partnership with someone who knows a thing or two about fashion and outfit repeating. I had the pleasure to work with Christian Siriano of Project Runway fame, directing him in a photoshoot and a series of TikTok ads.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Fashion</span>
+                            <span class="work-tag">Brand Partnership</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/994234161?h=6bf359601c&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/994234161?h=6bf359601c&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Cicis Pizza</h3>
+                        <p>Dynamic content strategy and creative direction for the beloved pizza chain, driving engagement and brand love.</p>
+                        <p class="full-description">Billy Buffet's Unlimited Pizza Buffet - When I worked as creative director in-house at Cicis Pizza, one of the many marketing windows we created was this infomercial-style concept inspired by the meme-worthy appeal of spokesperson Phil Swift and Flex Seal. The goal was to reinforce Cicis Pizza's biggest claim of unlimited pizza, pasta, salad and dessert all for a great value. It's Unbeatable. It's Unbelievable. It's Unlimited! Fun Fact: This concept reminded me of the joys of copywriting. You mean to tell me all I had to do was write, "And then a marching band comes in…" and low and behold a bus full of uniformed high school band students pulls up outside the studio? The pen mighty, indeed.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Restaurant</span>
+                            <span class="work-tag">Content Strategy</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/994222227?h=6cf35b8f58&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/994222227?h=6cf35b8f58&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>ExxonMobil</h3>
+                        <p>Strategic content creation for one of the world's largest energy companies, telling complex stories simply.</p>
+                        <p class="full-description">Meeting the global energy needs of tomorrow starts today. ExxonMobil annually distributes an outlook for energy document educating on industry trends, future demands and what needs to happen to address those demands as the world's population continues to rise. In addition to supporting the layout and organization of complex energy facts, statistics, infographics and more, I also wrote the script for a video summarization of the reports printed version that was animated in the style of that year's visual aesthetic.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Energy</span>
+                            <span class="work-tag">Corporate</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/994221773?h=c638c94008&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/994221773?h=c638c94008&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Sunshine Punch</h3>
+                        <p>Vibrant social media campaign bringing sunshine to every feed with creative video content and photography.</p>
+                        <p class="full-description">Your Summer Thirst Trap - It was important to establish a tone with strong art direction among product photography and video style to communicate the idea of Sunshine Punch being the ultimate "summer thirst trap," evoking a vintage feel that made consumers think back on cooling down with orange cream ice pops in the hot summertime. Beyond photography, I storyboarded paid social ads and edited three spots that ran to promote the brand's expansion into new markets nationwide.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Beverage</span>
+                            <span class="work-tag">Video Content</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/994222416?h=6cc805dd29&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/994222416?h=6cc805dd29&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Dial Concentrated Refills</h3>
+                        <p>Reduce. Reuse. Remix Clean! An innovative campaign mixing sustainability with music for Dial's eco-friendly refills.</p>
+                        <p class="full-description">To promote Dial® Soap's Concentrated Refills product, intended to help reduce plastic soap bottle waste by 95%, this concept took the attributes of the product itself for a spin. In order to simultaneously create awareness and educate how consumers are to use the refills, we took the "mixing" attribute of the instructions and associated it to the mixing of music. Working with musician Andrew Huang—known for creating music using random objects—the results were a fun execution that took a soap ad to places the category had never been before. It was a perfect formula.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Sustainability</span>
+                            <span class="work-tag">Music Partnership</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/998047184?h=8c636e1ab1&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/998047184?h=8c636e1ab1&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Creative Campaigns</h3>
+                        <p>Innovative campaigns that push creative boundaries and deliver measurable results across platforms.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Campaign</span>
+                            <span class="work-tag">Multi-platform</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" role="listitem">
+                    <div class="work-card-video-container">
+                        <div class="vimeo-container">
+                            <iframe 
+                                class="work-card-video"
+                                src="https://player.vimeo.com/video/272893730?h=78f868d9ef&background=1&autoplay=0&loop=1&muted=1&autopause=0"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                data-autoplay-src="https://player.vimeo.com/video/272893730?h=78f868d9ef&background=1&autoplay=1&loop=1&muted=1&autopause=0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="work-card-overlay">
+                        <div>
+                            <h3>View Case Study →</h3>
+                        </div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Photography & Visual Arts</h3>
+                        <p>Striking visual content that captures authentic moments and creates compelling brand imagery across all platforms.</p>
+                        <span class="read-more">Read more →</span>
+                        <div class="work-tags">
+                            <span class="work-tag">Photography</span>
+                            <span class="work-tag">Visual Design</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about" aria-label="About Andy Cantu">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Creating at the intersection of culture and commerce</h2>
+                    <p>I'm a Creative Director at CYLNDR Studios with a proven track record in the CPG, restaurant, energy, healthcare, and hotel industries.</p>
+                    <p>With a BA in Journalism/Advertising from the University of North Texas, I combine strategic thinking with creative execution to develop content that moves at the speed of social.</p>
+                    <p>My expertise spans branding, photography, video production, editing, and social media strategy. I believe in creating work that not only looks great but drives real business results.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Brand Partners</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Campaigns</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Creative Ideas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-3d" id="image-3d" role="img" aria-label="3D profile visualization">
+                        <p>Professional<br>Creative<br>Visionary</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Section -->
+        <section class="photography" id="photography" aria-label="Photography portfolio">
+            <div class="section-header">
+                <h2>Photography</h2>
+                <p>Capturing authentic moments and creating compelling visual narratives</p>
+            </div>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1647620161400-B3BSVR4QB7JYRACDQY7K/image-asset.jpeg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1483687154632-X3R72XDU710TOIGLXY61/IMG_0104.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1483687175985-Q4FZCGPEDIM8SA4S91Z9/IMG_1571.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1483936617893-9A7OKKCTMA8U9UBQH5CA/IMG_2334.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1483936644580-H3NDTS7T4BL2DFIIWVPO/IMG_2291.JPG?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1483939862328-BLFU5ETJZSEIIQS5L5SM/IMG_1855.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1483939966641-XEKEMKCLLRAPLW0QH4V4/IMG_1977.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1487109888539-BJKE6OCD4I7ECKTWOXEO/IMG_2773.JPG?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1489816197448-EI097V7ATUPB6LEWSCSG/CAN22764bw.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1487109716813-EK0GXMVYJCT0FLLNXWG0/IMG_2834.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1487109655201-HE00OHN94INRVYUGTZN0/IMG_2798.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1503102067306-MRU25QYVSOIFJTZY74W8/CAN23590-ac.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1498603041531-GA5MVWWYOPX9SO0R7K6T/IMG_3837.jpg?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/586f37c946c3c4a1fe58d82a/1503102298568-HJKS5UW9S9R9PLKIRZWQ/IMG_4039.JPG?format=1000w" alt="Photography by Andy Cantu" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="Full size photography">
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-label="Contact information">
+            <h2>Let's Create Something Amazing</h2>
+            <p>Ready to bring your brand story to life? Let's connect and explore how we can work together.</p>
+            <div class="contact-links">
+                <a href="mailto:contact@andycantu.com" class="contact-link" aria-label="Send email">Email Me</a>
+                <a href="https://www.linkedin.com/in/andycantu" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View LinkedIn profile">LinkedIn</a>
+                <a href="#" class="contact-link" aria-label="Download resume">Download Resume</a>
+            </div>
+            
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/andycantu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/andycantu" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://vimeo.com/andycantu" target="_blank" rel="noopener noreferrer">Vimeo</a>
+                <a href="/sitemap.xml">Sitemap</a>
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 Andy Cantu. All rights reserved. | Creative Director at CYLNDR Studios</p>
+        </div>
+    </footer>
+
+    <script>
+        // Performance: Use requestAnimationFrame for smooth animations
+        let ticking = false;
+        function requestTick(callback) {
+            if (!ticking) {
+                requestAnimationFrame(callback);
+                ticking = true;
+            }
+        }
+
+        // Loader with performance optimization
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 800);
+        });
+
+        // Simple Particle System
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = window.innerWidth > 768 ? 50 : 20;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.width = Math.random() * 4 + 1 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 20 + 20) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // Custom Cursor with debouncing
+        const cursor = document.getElementById('cursor');
+        const cursorFollower = document.getElementById('cursor-follower');
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+            cursorX += (mouseX - cursorX) * 0.5;
+            cursorY += (mouseY - cursorY) * 0.5;
+            cursor.style.left = cursorX + 'px';
+            cursor.style.top = cursorY + 'px';
+
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            cursorFollower.style.left = followerX + 'px';
+            cursorFollower.style.top = followerY + 'px';
+
+            requestAnimationFrame(animateCursor);
+        }
+        
+        // Only animate cursor on desktop
+        if (window.innerWidth > 768) {
+            animateCursor();
+        }
+
+        // Hover effects for cursor
+        const hoverElements = document.querySelectorAll('a, button, .work-card, .role-tag, .stat, .scroll-arrow');
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+                cursorFollower.style.transform = 'translate(-50%, -50%) scale(2)';
+            });
+            element.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+                cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+        });
+
+        // Navbar scroll effect with throttling
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+            requestTick(() => {
+                const navbar = document.getElementById('navbar');
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                
+                lastScrollTop = scrollTop;
+                ticking = false;
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Horizontal scroll for work section
+        const workContainer = document.getElementById('work-container');
+        const scrollLeft = document.getElementById('scroll-left');
+        const scrollRight = document.getElementById('scroll-right');
+
+        if (scrollLeft && scrollRight) {
+            scrollLeft.addEventListener('click', () => {
+                workContainer.scrollBy({ left: -400, behavior: 'smooth' });
+            });
+
+            scrollRight.addEventListener('click', () => {
+                workContainer.scrollBy({ left: 400, behavior: 'smooth' });
+            });
+        }
+
+        // 3D image effect
+        const image3d = document.getElementById('image-3d');
+        if (image3d && window.innerWidth > 768) {
+            document.addEventListener('mousemove', (e) => {
+                requestTick(() => {
+                    const rect = image3d.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    const rotateY = (x / rect.width) * 20;
+                    const rotateX = -(y / rect.height) * 20;
+                    
+                    image3d.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+                    ticking = false;
+                });
+            });
+        }
+
+        // Animate stats on scroll
+        const stats = document.querySelectorAll('.stat-number[data-target]');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalValue = parseInt(target.getAttribute('data-target'));
+                    let currentValue = 0;
+                    const increment = finalValue / 50;
+                    
+                    const updateCounter = () => {
+                        currentValue += increment;
+                        if (currentValue < finalValue) {
+                            target.textContent = Math.floor(currentValue) + '+';
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            target.textContent = finalValue + '+';
+                        }
+                    };
+                    
+                    updateCounter();
+                    statsObserver.unobserve(target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        stats.forEach(stat => {
+            statsObserver.observe(stat);
+        });
+
+        // Lazy load videos
+        const videos = document.querySelectorAll('.work-card-video');
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    const source = video.querySelector('source');
+                    const videoSrc = video.getAttribute('data-src');
+                    
+                    if (videoSrc) {
+                        source.src = videoSrc;
+                        video.load();
+                        
+                        video.addEventListener('loadeddata', () => {
+                            const loadingIndicator = video.parentElement.querySelector('.video-loading');
+                            if (loadingIndicator) {
+                                loadingIndicator.style.display = 'none';
+                            }
+                            video.play();
+                        });
+                        
+                        // Remove loading indicator on error too
+                        video.addEventListener('error', () => {
+                            const loadingIndicator = video.parentElement.querySelector('.video-loading');
+                            if (loadingIndicator) {
+                                loadingIndicator.textContent = '🎬';
+                            }
+                        });
+                    }
+                    
+                    videoObserver.unobserve(video);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        videos.forEach(video => {
+            videoObserver.observe(video);
+        });
+
+        // Auto-play videos on hover for Vimeo iframes
+        document.querySelectorAll('.work-card').forEach(card => {
+            const iframe = card.querySelector('iframe');
+            if (iframe) {
+                const originalSrc = iframe.src;
+                const autoplaySrc = iframe.getAttribute('data-autoplay-src');
+                
+                card.addEventListener('mouseenter', () => {
+                    if (autoplaySrc) {
+                        iframe.src = autoplaySrc;
+                    }
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    iframe.src = originalSrc;
+                });
+            }
+        });
+
+        // Parallax effect for hero content
+        window.addEventListener('scroll', () => {
+            requestTick(() => {
+                const scrolled = window.pageYOffset;
+                const heroContent = document.querySelector('.hero-content');
+                const heroIframe = document.querySelector('.hero .vimeo-container iframe');
+                
+                if (heroContent && scrolled < window.innerHeight) {
+                    heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+                    heroContent.style.opacity = 1 - (scrolled * 0.001);
+                }
+                
+                if (heroIframe && scrolled < window.innerHeight) {
+                    heroIframe.style.transform = `translate(-50%, -50%) scale(${1 + scrolled * 0.0003})`;
+                }
+                
+                ticking = false;
+            });
+        });
+
+        // Parallax effect for hero content
+        window.addEventListener('scroll', () => {
+            requestTick(() => {
+                const scrolled = window.pageYOffset;
+                const heroContent = document.querySelector('.hero-content');
+                const heroVideo = document.querySelector('.hero-video');
+                
+                if (heroContent && scrolled < window.innerHeight) {
+                    heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+                    heroContent.style.opacity = 1 - (scrolled * 0.001);
+                }
+                
+                if (heroVideo && scrolled < window.innerHeight) {
+                    heroVideo.style.transform = `translate(-50%, -50%) scale(${1 + scrolled * 0.0003})`;
+                }
+                
+                ticking = false;
+            });
+        });
+
+        // Intersection Observer for animations
+        const animateElements = document.querySelectorAll('.work-card, .stat, .role-tag');
+        const animateObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    animateObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+
+        animateElements.forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'all 0.6s ease';
+            animateObserver.observe(element);
+        });
+
+        // Form handling
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Add your form submission logic here
+                // For now, just show an alert
+                alert('Thank you for your message! I\'ll get back to you soon.');
+                contactForm.reset();
+            });
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Only enable shortcuts when not typing in form
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            
+            // Don't use shortcuts if lightbox is open
+            const lightboxElement = document.getElementById('lightbox');
+            if (lightboxElement && lightboxElement.classList.contains('active')) return;
+            
+            switch(e.key) {
+                case '1':
+                    document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
+                    break;
+                case '2':
+                    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                    break;
+                case '3':
+                    document.getElementById('photography').scrollIntoView({ behavior: 'smooth' });
+                    break;
+                case '4':
+                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                    break;
+                case 'Escape':
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    break;
+            }
+        });
+
+        // Read More functionality
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const workCard = this.closest('.work-card');
+                const fullDesc = workCard.querySelector('.full-description');
+                
+                if (workCard.classList.contains('expanded')) {
+                    workCard.classList.remove('expanded');
+                    this.textContent = 'Read more →';
+                } else {
+                    workCard.classList.add('expanded');
+                    this.textContent = 'Read less ←';
+                }
+            });
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+        document.querySelectorAll('.photo-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const img = this.querySelector('img');
+                lightboxImg.src = img.src.replace('format=500w', 'format=2000w');
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ESC key to close lightbox
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+
+        // Performance: Cleanup observers on page unload
+        window.addEventListener('beforeunload', () => {
+            statsObserver.disconnect();
+            animateObserver.disconnect();
+        });
+    </script>
+</body>
+</html>
